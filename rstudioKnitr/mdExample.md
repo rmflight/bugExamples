@@ -9,3 +9,6 @@ This is some dummy text
 # Internal Link2<a name="internal2"></a>
 Here is some more filler text
 
+A test link to [CNN][cnn1]
+
+[cnn1]: http://cnn.com
