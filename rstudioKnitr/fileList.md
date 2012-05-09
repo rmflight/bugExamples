@@ -21,8 +21,15 @@ Neither does this one, which I expect.
 
 ```r
 library(markdown)
-options(markdown.HTML.options=NULL)
 markdownToHTML("mdExample.md", "mdExample_md2html.html")
+```
+This one doesn't work either, because the default markdown option is only for `safe_links`
+
+But if I change the markdown options:
+
+```r
+options(markdown.HTML.options=NULL)
+markdownToHTML("mdExample.md", "mdExample_md2html_2.html")
 ```
 This one has internal links, because I set the `markdown` options first.
 
